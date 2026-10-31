@@ -9,11 +9,11 @@ public abstract class Partida {
     public static final int COLUMNAS = 6;
     public static final int TOTAL_CARTAS = 36;
 
-    protected Carta[] cartas = new Carta[TOTAL_CARTAS];
-    protected Jugador[] jugadores = new Jugador[2];
+    protected Carta[] cartas;
+    protected Jugador[] jugadores;
     protected int turno;
-    protected int primera = -1;
-    protected int segunda = -1;
+    protected int primera;
+    protected int segunda;
     protected boolean bloqueada;
     protected boolean terminada;
 
@@ -32,30 +32,30 @@ public abstract class Partida {
     public abstract String getResultado();
 
     public Carta getCarta(int posicion) {
-        return cartas[posicion];
+        throw new UnsupportedOperationException();
     }
 
     public Jugador getJugador(int posicion) {
-        return jugadores[posicion];
+        throw new UnsupportedOperationException();
     }
 
     public int getTurno() {
-        return turno;
+        throw new UnsupportedOperationException();
     }
 
     public int getPrimera() {
-        return primera;
+        throw new UnsupportedOperationException();
     }
 
     public int getSegunda() {
-        return segunda;
+        throw new UnsupportedOperationException();
     }
 
     public boolean estaBloqueada() {
-        return bloqueada;
+        throw new UnsupportedOperationException();
     }
 
     public boolean estaTerminada() {
-        return terminada;
+        throw new UnsupportedOperationException();
     }
 }
